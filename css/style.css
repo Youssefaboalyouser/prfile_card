@@ -1,0 +1,139 @@
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.main {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(64, 64, 64);
+    /* background-color: black; */
+}
+
+.profile-card {
+    position: relative;
+    border: 2px solid none;
+    border-radius: 14px;
+    background-color: white;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-card .image {
+    position: relative;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    padding: 3px;
+    margin-top: 10px;
+}
+
+.image .picture {
+    position: relative;
+    border-radius: 50%;
+    height: 100%;
+    width: 100%;
+    border: 3px solid white;
+}
+
+.profile-card .text-data {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    padding: 5px;
+}
+
+.text-data .job {
+    font-size: 20px;
+    font-weight: 500;
+    margin: 10px 0;
+
+}
+
+.text-data .descibe {
+    align-items: center;
+    margin: 0px 15px 10px;
+    font-size: 18px;
+    font-weight: 300;
+    max-width: 400px;
+}
+
+.text-data .name {
+    font-size: 30px;
+    text-decoration: solid;
+    font-weight: 50;
+    margin-top: 15px;
+}
+
+.profile-card .icons {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    margin: 15px;
+}
+
+.icons .link1,
+.icons .link2,
+.icons .link3,
+.icons .link4 {
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    margin: 0 10px;
+    background-color: #4070f4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 18px;
+}
+
+.profile-card .bottom {
+    display: flex;
+    align-items: center;
+    margin: 15px;
+}
+
+.bottom .mail {
+    border-radius: 24px;
+    border: none;
+    font-size: 22px;
+    font-weight: 400;
+    color: white;
+    background-color: #4070f4;
+    width: 300px;
+    height: 40px;
+    padding: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.profile-card .mail:hover {
+    color: red;
+}
+
+.bottom .mail span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
